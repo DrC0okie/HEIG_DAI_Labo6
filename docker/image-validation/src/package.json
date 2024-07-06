@@ -1,0 +1,20 @@
+{
+  "name": "music-validation",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Olivier Liechti",
+  "license": "ISC",
+  "dependencies": {
+    "async": "2.0.0-rc.4",
+    "chai": "3.5.0",
+    "chance": "1.0.3",
+    "dockerode": "2.2.10",
+    "ejs": "^3.1.8",
+    "express": "^4.18.2",
+    "socket.io": "^4.5.4"
+  }
+}

@@ -1,0 +1,43 @@
+origin	https://github.com/DrC0okie/DAI-2022-UDP-Orchestra.git (fetch)
+origin	https://github.com/DrC0okie/DAI-2022-UDP-Orchestra.git (push)
+Starting auditor container "4d45e3479d744541930f5d8fd7af9b8c2ae6814594c27539c107c1a6211b6d87"
+Starting auditor container "7ee29b2d88f1bba8ec88f27729b9324f7317bac5294aaac69df7a97ebbf23c33"
+Starting auditor container "484cf36eef60dba32b09470010254e71ef734ed49ec63446c508554ef47a1a05"
+Starting auditor container "fba0a84694f44ee942a5fae3f25ef7d19e395d27f36a2eacf145c1b051686d57"
+Starting auditor container "b9885a11f9e3a0904336bf0f44d21f347e16b696765ac618038af457fe62280d"
+Starting auditor container "12ff3828188e13b22cd0717711763ef957f2f98052cd9fc54467d84f78687996"
+Starting auditor container "41369379c72d6356c3d0763b85c6f2374faec452668e20171cef3a7417f80e79"
+Starting auditor container "87f9f104e0dadd139094c38a0762d31a824084154fbc2420cfdec0178ba795af"
+Starting auditor container "90246a7a89fb8ab24a6a5321e1233684d4c5b1c7168f18303bf30200e4502bce"
+Starting auditor container "522b9702b17322a10b1e3268fa45d7e7be8eee68248c3ed56c721ded849c502f"
+Starting auditor container "a61da347e6c23f3faf7d4d06ad7dddd400da867f0bcdbb6ee2b60e3773e0c226"
+11 containers have been started.
+41369379c72d6356c3d0763b85c6f2374faec452668e20171cef3a7417f80e79 : musician.js,violin
+12ff3828188e13b22cd0717711763ef957f2f98052cd9fc54467d84f78687996 : musician.js,drum
+b9885a11f9e3a0904336bf0f44d21f347e16b696765ac618038af457fe62280d : musician.js,trumpet
+fba0a84694f44ee942a5fae3f25ef7d19e395d27f36a2eacf145c1b051686d57 : musician.js,flute
+87f9f104e0dadd139094c38a0762d31a824084154fbc2420cfdec0178ba795af : musician.js,piano
+a61da347e6c23f3faf7d4d06ad7dddd400da867f0bcdbb6ee2b60e3773e0c226 : musician.js,drum
+522b9702b17322a10b1e3268fa45d7e7be8eee68248c3ed56c721ded849c502f : musician.js,drum
+90246a7a89fb8ab24a6a5321e1233684d4c5b1c7168f18303bf30200e4502bce : musician.js,drum
+7ee29b2d88f1bba8ec88f27729b9324f7317bac5294aaac69df7a97ebbf23c33 : musician.js,violin
+484cf36eef60dba32b09470010254e71ef734ed49ec63446c508554ef47a1a05 : musician.js,violin
+4d45e3479d744541930f5d8fd7af9b8c2ae6814594c27539c107c1a6211b6d87 : auditor.js
+Auditor validation: success: ["drum","drum","drum","drum","flute","piano","trumpet","violin","violin","violin"]
+There are 10 musicians, let's kill one
+killed 7ee29b2d88f1bba8ec88f27729b9324f7317bac5294aaac69df7a97ebbf23c33
+Auditor validation: success: ["drum","drum","drum","drum","flute","piano","trumpet","violin","violin"]
+Scheduling a new test
+There are 9 musicians, let's kill one
+killed a61da347e6c23f3faf7d4d06ad7dddd400da867f0bcdbb6ee2b60e3773e0c226
+Auditor validation: success: ["drum","drum","drum","flute","piano","trumpet","violin","violin"]
+Scheduling a new test
+There are 8 musicians, let's kill one
+killed 12ff3828188e13b22cd0717711763ef957f2f98052cd9fc54467d84f78687996
+Auditor validation: success: ["drum","drum","flute","piano","trumpet","violin","violin"]
+Scheduling a new test
+There are 7 musicians, let's kill one
+killed 484cf36eef60dba32b09470010254e71ef734ed49ec63446c508554ef47a1a05
+Auditor validation: success: ["drum","drum","flute","piano","trumpet","violin"]
+Scheduling a new test
+We have done all tests.

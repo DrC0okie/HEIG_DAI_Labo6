@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Musicians</title>
+    <style>
+      tbody {font-family: Arial, sans-serif; font-size: 14px; color: #333; background-color: #f9f9f9;}
+      tbody tr {border-bottom: 1px solid #ccc;}
+      tbody tr:hover {background-color: #f1f1f1;}
+      tbody td {padding: 10px; text-align: center;}
+      tbody tr:nth-child(even) {background-color: #f2f2f2;}
+      table {border-collapse: collapse; width: 100%;}
+      thead {background-color: #333; color: #fff; }
+    </style>
+  </head>
+  <body>
+    <table>
+      <thead>
+        <tr>
+          <th>UUID</th>
+          <th>Instrument</th>
+          <th>Active since</th>
+          <th>Up time [s]</th>
+        </tr>
+      </thead>
+      <tbody id="table-body">
+        <% musicians.forEach(({ uuid, instrument, activeSince, upTime}) => { %>
+          <tr>
+            <td><%= uuid %></td>
+            <td><%= instrument %></td>
+            <td><%= activeSince %></td>
+            <td><%= upTime %></td>
+          </tr>
+        <% }); %>
+      </tbody>
+    </table>
+  </body>
+  <script src="/socket.io/socket.io.js"></script>
+<script>
+    var socket = io();
+    socket.on('newData', function(musicians) {
+        var tableBody = document.getElementById("table-body");
+        var newData = "";
+        musicians.forEach(({ uuid, instrument, activeSince, upTime }) => {
+            newData += `<tr><td>${uuid}</td><td>${instrument}</td><td>${activeSince}</td><td>${upTime}</td></tr>`;
+        });
+        tableBody.innerHTML = newData;
+    });
+</script>
+
+</html>
